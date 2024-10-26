@@ -128,6 +128,83 @@ cout << "Input Kata : ";
 ```cpp
 cin >> kata;
 ```
+`cin` berfungsi untuk memasuka nilai ke variabel `kata`.
+
+
+# Pembalik String Menggunakan Looping di C++
+
+Kode ini digunakan untuk membalik urutan karakter dari sebuah **String** dalam bahasa Java. Terdapat tiga jenis implementasi dengan loop berbeda:
+
+1. **`for` loop**  
+2. **`while` loop**  
+3. **`do-while` loop**
+
+## 1. Pembalik String Menggunakan `for` loop
+
+```java
+for(int i = kata.length() - 1; i >= 0; i--) {
+    kataBalik += kata[i];
+}
+```
+
+- **Penjelasan:**
+  - Loop dimulai dari indeks terakhir string (`kata.length() - 1`).
+  - Loop berjalan mundur sampai indeks 0 (atau selama `i >= 0`).
+  - Pada setiap iterasi, karakter pada indeks ke-`i` ditambahkan ke variabel `kataBalik`.
+
+**Kelebihan:**  
+`for` loop cocok digunakan jika jumlah iterasi diketahui di awal.
+
+---
+
+## 2. Pembalik String Menggunakan `while` loop
+
+```java
+int i = kata.length() - 1;
+
+while(i >= 0) {
+    kataBalik += kata[i];
+    i--;
+}
+```
+
+- **Penjelasan:**
+  - Deklarasi variabel `i` berada di luar loop dan diinisialisasi dengan nilai indeks terakhir.
+  - Loop akan terus berjalan selama `i` lebih besar atau sama dengan 0.
+  - Setiap iterasi menambahkan karakter ke `kataBalik` dan menurunkan nilai `i`.
+
+**Kelebihan:**  
+`while` loop lebih fleksibel dan cocok untuk kasus di mana kondisi berhenti mungkin tidak diketahui di awal.
+
+---
+
+## 3. Pembalik String Menggunakan `do-while` loop
+
+```java
+int i = kata.length() - 1;
+
+do {
+    kataBalik += kata[i];
+    i--;
+} while(i >= 0);
+```
+
+- **Penjelasan:**
+  - Sama seperti `while` loop, variabel `i` diinisialisasi terlebih dahulu.
+  - Perbedaannya, **`do-while`** selalu mengeksekusi blok kode minimal satu kali, bahkan jika kondisi pada awalnya salah.
+  - Loop terus berjalan selama kondisi `i >= 0` terpenuhi.
+
+**Kelebihan:**  
+`do-while` loop berguna jika Anda ingin memastikan kode dijalankan setidaknya sekali, tanpa memeriksa kondisi terlebih dahulu.
+
+---
+
+## Kesimpulan
+Ketiga jenis loop (`for`, `while`, dan `do-while`) memiliki hasil yang sama, yaitu membalikkan urutan karakter dari string. Pilihan loop yang digunakan tergantung pada kebutuhan dan kondisi spesifik program.
+
+
+
+
 
 
 
