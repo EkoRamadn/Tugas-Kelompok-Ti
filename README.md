@@ -88,3 +88,47 @@ hasil : false
    ```
    ./palindrome_checker
    ```
+
+## Penjelasan Alur Program
+
+dimulai dari line 1 :
+```cpp
+#include <iostream>
+```
+menyertakan file heaedr atau library Input-Output Stream atau `<iosstream>`
+
+```cpp
+using namespace std;
+```
+memberitahu compiler agar kita tidak perlu menuliskan awalan `std::` setiap kali menggunakan elemen-elemen dari namespace standar (seperti `std::cout`, `std::cin`, dll.)
+
+`namespace` adalah fitur dalam C++ yang digunakan untuk mengelompokkan fungsi, kelas, atau variabel agar tidak terjadi konflik nama (name conflict).
+
+```cpp
+int main(){
+   //kode lain nya...
+}
+```
+membuat fungsi main dengan tipe data `int` integer
+
+```cpp
+string kata, kataBalik;
+```
+mendeklarasikan variabel `kata` dan `kataBalik` dengan tipe data `string`
+
+```cpp
+cout << "Check Kata" << "\n";
+cout << "Input Kata : ";
+```
+`cout` berfungsi untuk menampilkan `"Check Kata"` dan `"Input Kata : "` di console.
+
+`"\n"` merupakan karakter spesial dalam string yang bertujuan agar tampilan console selanjutnya berada pada bawah teks dan tidak dalam 1 line.
+
+
+```cpp
+cin >> kata;
+```
+
+
+
+
