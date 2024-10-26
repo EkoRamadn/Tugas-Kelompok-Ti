@@ -199,8 +199,34 @@ do {
 
 ---
 
-## Kesimpulan
-Ketiga jenis loop (`for`, `while`, dan `do-while`) memiliki hasil yang sama, yaitu membalikkan urutan karakter dari string. Pilihan loop yang digunakan tergantung pada kebutuhan dan kondisi spesifik program.
+## Membandingkan String dengan Operator Ternary
+
+Berikut adalah contoh kode untuk memeriksa apakah string asli sama dengan string yang telah dibalik, menggunakan **operator ternary** dalam bahasa C++:
+
+```cpp
+string hasil = (kata == kataBalik) ? "True" : "false";
+cout << "hasil : " << hasil;
+
+return 0;
+```
+
+### Penjelasan:
+
+- **Operator Ternary**:  
+  `?` dan `:` digunakan untuk menuliskan **if-else** secara singkat.  
+  Sintaks:  
+  ``` 
+  kondisi ? nilai_jika_true : nilai_jika_false;
+
+  // Sama Dengan
+
+  if(kondisi) {
+     nilai_jika_true
+  } else {
+     nilai_jika_false
+  }
+  ```
+
 
 
 
