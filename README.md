@@ -95,7 +95,7 @@ dimulai dari line 1 :
 ```cpp
 #include <iostream>
 ```
-menyertakan file heaedr atau library Input-Output Stream atau `<iosstream>`
+menyertakan library Input-Output Stream atau `<iosstream>`
 
 ```cpp
 using namespace std;
@@ -131,9 +131,9 @@ cin >> kata;
 `cin` berfungsi untuk memasuka nilai ke variabel `kata`.
 
 
-# Pembalik String Menggunakan Looping di C++
+## Pembalik String Menggunakan Looping di C++
 
-Kode ini digunakan untuk membalik urutan karakter dari sebuah **String** dalam bahasa Java. Terdapat tiga jenis implementasi dengan loop berbeda:
+Kode ini digunakan untuk membalik urutan karakter dari sebuah **String** dalam bahasa c++. Terdapat tiga jenis implementasi dengan loop berbeda:
 
 1. **`for` loop**  
 2. **`while` loop**  
@@ -141,7 +141,7 @@ Kode ini digunakan untuk membalik urutan karakter dari sebuah **String** dalam b
 
 ## 1. Pembalik String Menggunakan `for` loop
 
-```java
+```cpp
 for(int i = kata.length() - 1; i >= 0; i--) {
     kataBalik += kata[i];
 }
@@ -159,7 +159,7 @@ for(int i = kata.length() - 1; i >= 0; i--) {
 
 ## 2. Pembalik String Menggunakan `while` loop
 
-```java
+```cpp
 int i = kata.length() - 1;
 
 while(i >= 0) {
@@ -180,7 +180,7 @@ while(i >= 0) {
 
 ## 3. Pembalik String Menggunakan `do-while` loop
 
-```java
+```cpp
 int i = kata.length() - 1;
 
 do {
